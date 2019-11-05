@@ -1,0 +1,95 @@
+Practice Questions
+1. What are the two values of the Boolean data type? How do you write them?
+A: True & False (= False)
+
+2. What are the three Boolean operators?
+A: and, or & not
+
+3. Write out the truth tables of each Boolean operator (that is, every possible combination of Boolean values for the operator and what they evaluate to).
+A:
+and                   or                   not
+True  True  True      True  True  True     True   False
+True  False False     True  False True     False  True
+False True  False     False True  True
+False False False     False False False
+
+4. What do the following expressions evaluate to?
+
+(5 > 4) and (3 == 5): False
+not (5 > 4): Faalse
+(5 > 4) or (3 == 5): True
+not ((5 > 4) or (3 == 5)): False
+(True and True) and (True == False): False
+(not False) or (not True): True
+
+5. What are the six comparison operators?
+A:  < = Less than
+    > = Greater than
+    == = Equal to
+    != = Not equal to
+    <= = Less than or equal to
+    >= = Greater than or equal to
+    
+6. What is the difference between the equal to operator and the assignment operator?
+A:   The equal to operator (==) is used to perform a comparison to left and right sides of an expression.
+     The assignment operator (=) is used to assign the value on the right side of the expression to the variable on the left side of the operator 
+
+7. Explain what a condition is and where you would use one.
+A: Condition is where code is only meant to be run if certain conditions are met
+
+8. Identify the three blocks in this code:
+
+
+spam = 0 **BLOCK 1**
+if spam == 10:**BLOCK 1**
+    print('eggs')**BLOCK 2**
+    if spam > 5:**BLOCK 2**
+        print('bacon')**BLOCK 3**
+    else:**BLOCK 2**
+        print('ham') **BLOCK 3**
+    print('spam')**BLOCK 2**
+print('spam')**BLOCK 1**
+
+9. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+A:
+
+if spam == 1:
+    print('Hello')
+elif spam == 2:
+    print('Howdy')
+else:
+    print('Greetings!')
+ 
+
+10. What can you press if your program is stuck in an infinite loop?
+A: CTRL+C
+
+11. What is the difference between break and continue?
+A: Break will exit out of the loop whereas Continue will progress with the next iteration of the loop.
+
+12. What is the difference between range(10), range(0, 10), and range(0, 10, 1) in a for loop?
+A: Functionally nothing, however the arguments that are passed could change the way that the range function behaves.
+    range(stop), range([start], stop), range([start], stop,[increment])
+
+13. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+A:
+
+for x in range(1, 11):
+    print(x)
+--------------------------
+x = 1
+while x <= 10:
+  print(x)
+  x += 1
+
+14. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+A:
+
+import spam
+
+spam.bacon()
+
+Extra credit: Look up the round() and abs() functions on the Internet, and find out what they do. Experiment with them in the interactive shell.
+round() is used to round numbers to a specific number of decimal places.
+abs() is used to find the absolute value
+
