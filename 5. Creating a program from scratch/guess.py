@@ -4,7 +4,7 @@
 import random
 
 TITLE = 'GUESSING GAME'
-print(TITLE.center(10,' '))
+print(TITLE)
 print(len(TITLE) * '-')
 
 print('What is your name?')
@@ -27,4 +27,3 @@ if guess == secret_number:
     print('You win ' + name + '! It took you ' + str(guess_number) + ' guesses')
 else:
     print('You Lose! Better luck next time.')
-
